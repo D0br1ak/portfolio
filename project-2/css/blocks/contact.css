@@ -1,0 +1,49 @@
+.contact__section {
+  margin-top: 70px;
+}
+
+.contact__inner {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+
+background: url(../structure/bacgrounds/bg-5.jpg);
+padding: 320px 0px 110px 100px;
+
+}
+
+.contact__bg {
+  position: absolute;
+  z-index: -1;
+}
+
+.contact__content {
+margin-top: -50px;
+margin-left: 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.contact__tel {}
+
+.contact__mail {
+  text-decoration: underline;
+}
+
+.contact__list {
+  display: flex;
+  gap: 32px;
+}
+.contact__socials {
+  margin-left: -100px;
+margin-top: 280px;
+  display: flex;
+  gap: 32px;
+}
+
+@media(width <= 768px){
+  .contact__section {
+  margin-top: 10px;
+}
+}

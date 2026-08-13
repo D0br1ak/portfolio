@@ -1,0 +1,79 @@
+.burger {
+  z-index: var(--layer-3);
+  position: relative;
+  background: var(--text-color);
+  display: none;
+  padding: 0 20px;
+  opacity: .8;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  right:0;
+  left: 0;
+border-bottom: 2px solid var(--secondary-color);
+}
+@media(width <=768px){
+.burger {
+  display: flex;
+
+
+}
+}
+.logo{
+  font-size: 20px;
+}
+.burger-icon {
+  transform: translatey(22px);
+  width: 50px;
+  height: 50px;
+  justify-content: center;
+  align-items: center;
+  z-index: var(--layer-3);
+}
+
+
+.burger-icon span,
+.burger-icon span::before,
+.burger-icon span::after {
+  display: block;
+  width: 30px;
+  height: 3px;
+  border-radius: 100px;
+  background: var(--icon-color);
+  transition: var(--transition);
+}
+
+.burger-icon span {
+  position: relative;
+}
+
+.burger-icon span::before,
+.burger-icon span::after {
+  content: "";
+  position: absolute;
+}
+
+.burger-icon span::after {
+  bottom: -8px;
+
+}
+
+.burger-icon span::before {
+  top: -8px;
+
+}
+
+.body--opened-menu .burger-icon span {
+  background: transparent;
+}
+
+.body--opened-menu .burger-icon span::after {
+  bottom: 0px;
+  transform: rotate(45deg);
+}
+
+.body--opened-menu .burger-icon span::before {
+  top: 0px;
+  transform: rotate(-45deg);
+}

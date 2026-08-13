@@ -1,0 +1,43 @@
+@import "../css/structure/reset.css";
+@import "../css/fonts.css";
+@import "../css/structure/global.css";
+@import "../css/structure/vars.css";
+
+@import "../css/blocks/header.css";
+@import "../css/blocks/footer.css";
+
+
+@import "../css/blocks/hero.css";
+@import "../css/blocks/modal.css";
+@import "../css/blocks/services.css";
+@import "../css/blocks/quolity.css";
+@import "../css/blocks/tariffs.css";
+@import "../css/blocks/cases.css";
+@import "../css/blocks/usability.css";
+@import "../css/blocks/facts.css";
+@import "../css/blocks/advantages.css";
+@import "../css/blocks/accordion.css";
+@import "../css/blocks/feedback.css";
+
+@import "../css/blocks/contact.css";
+@import "../css/blocks/qr.css";
+@import "../css/blocks/office.css";
+@import "../css/blocks/cooperation.css";
+
+@import "../css/blocks/comment.css";
+@import "../css/blocks/quiz.css";
+@import "../css/blocks/price.css";
+@import "../css/blocks/work.css";
+@import "../css/blocks/form.css";
+@import "../css/blocks/marketplace.css";
+
+@import "../css/blocks/promotion.css";
+@import "../css/blocks/feature.css";
+@import "../css/blocks/location.css";
+@import "../css/blocks/clients.css";
+@import "../css/blocks/cost.css";
+@import "../css/blocks/ourtariffs.css";
+
+@import "../css/blocks/burger.css";
+@import "../css/blocks/modal.css";
+@import "../css/blocks/services-modal.css";

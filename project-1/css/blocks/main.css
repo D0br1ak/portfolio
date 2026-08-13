@@ -1,0 +1,12 @@
+@import "./hero.css";
+@import "./product.css";
+@import "./description.css";
+@import "./gallery.css";
+@import "./function.css";
+@import "./contact.css";
+
+
+
+.main{
+margin-top: -20px;
+}

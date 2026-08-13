@@ -1,0 +1,251 @@
+.quiz__article {
+  margin-top: 230px;
+}
+
+.quiz__inner {
+  position: relative;
+  display: flex;
+  gap: 23px;
+}
+
+.quiz__descr {
+  position: relative;
+  padding-left: 33px;
+  max-width: 386px;
+  max-height: 300px;
+  background: url(../structure/bacgrounds/quiz-bg-2.png) 100% 100%/ cover no-repeat;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+}
+
+.quiz__img {
+  position: absolute;
+  z-index: -1;
+  top: -210px;
+  left: 100px;
+}
+
+.quiz__content {
+  margin-top: -50px;
+  border-radius: var(--border-radius) ;
+}
+
+
+.quiz__item {
+  background: url(../structure/bacgrounds/quiz-bg.png) 100% 20% / cover no-repeat;
+  padding: 126px 70px 126px 40px;
+  max-width: 679px;
+  max-height: 570px;
+  gap: 48px;
+  display: flex;
+  flex-direction: column;
+    display: none; 
+}
+
+.quiz__item--active {
+  display: flex; 
+  flex-direction: column; 
+}
+
+.quiz__title {
+  font-family: "ProstoOne";
+  font-size: 32px;
+}
+
+.quiz__question {
+  font-weight: 700;
+}
+
+.quiz__answers {
+  flex-wrap: nowrap;
+  display: flex;
+  gap: 16px;
+}
+
+.quiz__answer {
+  text-wrap: nowrap;
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 4px;
+  align-items: center;
+}
+
+.quiz__answer input {
+  cursor: pointer;
+  background: #000;
+}
+
+.quiz__btn {
+  background: var(--general-color) ;
+  padding: 18px 24px;
+  font-weight: 700;
+  border-radius: 100px;
+  text-align: center;
+  align-self: flex-start;
+}
+
+.quiz__btn:hover {
+  background: var(--general-color) ;
+  padding: 18px 24px;
+  font-weight: 700;
+  border-radius: 100px;
+  text-align: center;
+  align-self: flex-start;
+}
+
+.slider-wrapper {
+  font-size: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.slider-value {
+  position: absolute;
+  top: -15px;
+  left: 50%;
+  transform: translateX(-69%);
+  color: #000000;
+  padding: 8px 18px;
+  font-weight: 700;
+  z-index: 10;
+  white-space: nowrap;
+  border: 1px solid #000;
+  background: transparent;
+  padding: 5px;
+  border-radius: 4px;
+}
+
+
+input[type=range] {
+  width: 300px;
+  height: 1px;
+  background: #000;
+  position: relative;
+  z-index: 5;
+}
+
+
+input[type=range]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 10px;
+  height: 10px;
+  background: #000000;
+  cursor: pointer;
+  border: 3px solid #000000;
+  transition: 0.1s;
+}
+
+
+.range-labels {
+  display: flex;
+  justify-content: space-between;
+  font-weight: 600;
+  color: #000000;
+}
+
+.min-label, .max-label {
+  border: 1px solid #000;
+  background: transparent;
+  padding: 5px;
+  border-radius: 4px;
+}
+
+.description {
+  color: #666;
+  font-size: 1.1rem;
+}
+
+.slider-wrapper {
+  position: relative;
+  margin: 50px 0 20px;
+}
+
+.quiz__form {
+  display: flex;
+  gap: 24px;
+
+}
+
+.quiz__form input {
+  min-width: 300px;
+  padding: 14px 24px;
+  background: transparent;
+  border-radius: var(--border-radius) ;
+  border: 1px solid #15151575;
+}
+
+@media(width <=1024px) {
+  .quiz__inner {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .quiz__descr {
+    display: none;
+  }
+
+  .quiz__item {
+    flex-direction: column;
+  }
+}
+
+@media(width <=768px) {
+  .quiz__title {
+    font-size: 18px;
+  }
+
+  .quiz__item {
+    padding: 40px;
+    padding-top: 60px;
+    gap: 28px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .quiz__answers {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .quiz__answer {
+  text-wrap: wrap;
+}
+.quiz__btn {
+  font-size: 14px;
+  padding: 10px 14px;
+}
+.quiz__form {
+  flex-direction: column;
+  gap: 8px;
+
+}
+input[type=range] {
+  width: 200px;
+}
+
+.quiz__form input {
+  max-width: 200px;
+  padding: 6px 24px;
+  background: transparent;
+  border-radius: var(--border-radius) ;
+  border: 1px solid #15151575;
+}
+}
+@media(width <=450px) {
+
+
+  .quiz__item {
+    padding: 10px;
+    padding-top: 60px;
+    gap: 18px;
+    display: flex;
+    flex-direction: column;
+  }
+.quiz__btn {
+  background: var(--general-color) ;
+  padding: 10px;
+}
+}
+

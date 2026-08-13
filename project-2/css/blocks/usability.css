@@ -1,0 +1,53 @@
+.usability__section {
+  margin-top: 165px;
+  ;
+}
+
+
+
+.usability__title {
+  font-size: 48px;
+}
+
+
+.usability__list {
+  background: url(../structure/bacgrounds/Subtract-2.png)80% 60%/ cover no-repeat;
+  margin-top: 40px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+.usability__item {
+  padding: 32px;
+  background: #ffffffd0;
+  border-radius: var(--border-radius) ;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.usability__item-title {
+    font-family: "ProstoOne";
+  display: flex;
+  gap: 16px;
+  align-items: center;
+}
+.usability__item-title--result{
+font-size: 32px;
+}
+
+@media(width <= 1024px){
+  .usability__title {
+  font-size: 32px;
+}
+.usability__list {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+}
+@media(width <= 576px){
+.usability__list {
+  grid-template-columns: repeat(1, 1fr);
+}
+}

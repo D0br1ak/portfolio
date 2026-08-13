@@ -1,0 +1,146 @@
+@import "./burger.css";
+@import "./nav.css";
+
+.header {
+  color: var(--global-color);
+  font-size: 14px;
+}
+
+.header__inner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.header__top {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  padding: 15px;
+  background: var(--footer-color);
+}
+
+@media(width <=768px) {
+  .header__top {
+    padding-top: 70px;
+    flex-direction: column;
+    justify-content: left;
+  }
+}
+
+.header__descr {
+  margin-left: -20px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+}
+
+@media(width <=1100px) {
+  .header__descr {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2vh 20px;
+  }
+}
+
+@media(width <=1024px) {
+  .header__descr {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media(width <=768px) {
+  .header__descr {
+    gap: 1vh 10px;
+  }
+}
+
+@media(width <450px) {
+  .header__descr {
+    grid-template-columns: none;
+    grid-template-rows: repeat(2, 100px);
+  }
+}
+.descr__item {
+  display: flex;
+  gap: 8px;
+}
+
+
+.descr__content {
+  display: flex;
+  flex-direction: column;
+}
+
+@media(width <=768px) {
+  .descr__item {
+    gap: 15px;
+  }
+
+  .descr__content {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.descr_link {
+  font-size: 16px;
+  color: var(--global-color);
+  text-decoration: none;
+  transition: var(--transition);
+}
+
+.descr_link:hover{
+  opacity: .6;
+}
+
+.descr_title {
+  font-size: 20px;
+  text-wrap: nowrap;
+
+}
+
+.descr__text {
+  max-width: 150px;
+  font-size: 16px;
+}
+
+.header__socials {
+  display: flex;
+  gap: 15px;
+}
+
+.header__top-button {
+  text-wrap: nowrap;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: var(--global-color);
+  font-size: 16px;
+  font-weight: 500;
+  padding: 5px;
+  background: var(--icon-color);
+  transition: var(--transition);
+  border-radius: 5px;
+}
+
+.header__top-button:hover {
+  color: var(--icon-color);
+  padding: 10px;
+  background: var(--secondary-color);
+}
+
+@media(width <=768px) {
+  .header__top-button {
+    font-size: 14px;
+    font-weight: 500;
+    padding: 2px;
+  }
+
+  .header__top-button:hover {
+    padding: 5px;
+
+  }
+}
+
+.bi-arrow-right {
+  font-size: 14px;
+}

@@ -1,0 +1,173 @@
+.tariffs__section {
+  margin-top: 200px;
+  background: url(../structure/bacgrounds/Subtract-3.png)100% 60%/ cover no-repeat;
+  width: 100%;
+}
+
+.tariffs__inner {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.tarifs__title {
+  font-family: "ProstOne";
+  text-transform: uppercase;
+  align-self: flex-start;
+  font-size: 48px;
+}
+
+.tariffs__content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 23px;
+
+}
+
+.tariffs__item {
+  border-radius: var(--border-radius) ;
+  padding: 32px;
+  background: #ffffff;
+  max-width: 648px;
+
+}
+
+.tariffs__item:first-child {
+  padding-right: 244px;
+  ;
+  z-index: 0;
+}
+
+.tariffs__item:nth-child(2) {
+  margin-top: 90px;
+  z-index: 2;
+}
+
+.tariffs__item__head {
+  justify-content: space-between;
+  display: flex;
+}
+
+.tariffs__list-item {
+  font-family: "ProstoOne";
+  display: flex;
+  justify-content: space-between;
+  line-height: 120%;
+  font-size: 26px;
+  align-items: center;
+}
+
+.tariff__item-title,
+.tariffs__itemt-cost {
+  display: block;
+  cursor: pointer;
+  margin-top: 20px;
+  transition: var(--transition ) ;
+}
+
+.tariff__item-title:hover,
+.tariffs__itemt-cost:hover {
+  color: var(--general-color) ;
+}
+
+.tariffs__itemt-cost {
+  text-wrap: nowrap;
+}
+
+.tariffs__bg-img {
+  pointer-events: none;
+  z-index: 1;
+  position: absolute;
+  top: -320px;
+  right: 180px;
+}
+
+.tariffs__bg-img--mobile {
+  display: none;
+  position: absolute;
+  z-index: 1;
+}
+
+.tariff__btn {
+  margin-top: 56px;
+  text-wrap: nowrap;
+  font-weight: 700;
+  background-color: var(--general-color) ;
+  border-radius: 100px;
+  opacity: 1;
+  padding: 24px 18px;
+  transition: var(--transition ) ;
+}
+
+.tariff__btn:hover {
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+
+@media(width <=1024px) {
+  .tariffs__bg-img {
+    display: none;
+  }
+
+  .tariffs__bg-img--mobile {
+    display: block;
+    position: absolute;
+    bottom: 280px;
+    right: 60px;
+  }
+
+  .tariffs__section {
+    margin-top: 132px;
+
+  }
+
+  .tariffs__inner {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+
+  }
+
+  .tarifs__title {
+    margin-bottom: 24px;
+    font-size: 32px;
+  }
+
+  .tariffs__content {
+    gap: 62px;
+    flex-direction: column;
+  }
+
+  .tariffs__item {
+    position: relative;
+    border-radius: var(--border-radius) ;
+    padding: 24px;
+    background: #ffffff;
+    min-width: 368px;
+    max-width: none;
+
+  }
+
+  .tariffs__item:first-child {
+    padding-right: 24px;
+    z-index: 0;
+  }
+
+  .tariffs__item:nth-child(2) {
+    margin-top: 0px;
+    z-index: 2;
+  }
+
+  .tariffs__list-item {
+    font-family: "ProstoOne";
+    display: flex;
+    justify-content: space-between;
+    line-height: 120%;
+    font-size: 14px;
+
+  }
+
+}

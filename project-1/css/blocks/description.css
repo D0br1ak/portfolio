@@ -1,0 +1,33 @@
+.description__section {
+
+  margin-top: 20px;
+}
+
+.description__inner {
+
+  padding: 15px;
+  text-align: center;
+  font-family: var(--general-font);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.description__content {
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  border: 1px solid var(--icon-color);
+}
+
+.description__title {
+  font-size: 30px;
+}
+
+.description__text {
+
+  font-size: 24px;
+
+  line-height: 2;
+  max-width: 1200px;
+}

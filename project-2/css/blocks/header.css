@@ -1,0 +1,248 @@
+.header__inner {
+  display: flex;
+  flex-direction: column;
+}
+
+.header__top {
+  padding-top: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header__communication {
+  display: flex;
+  gap: 32px;
+
+}
+
+.header__logo--mobile {
+  display: none;
+}
+
+.header__communication-btn {
+  text-wrap: nowrap;
+  font-weight: 700;
+  background-color: var(--general-color) ;
+  border-radius: var(--border-radius) ;
+  opacity: 1;
+  padding: 10px 24px;
+  transition: var(--transition ) ;
+}
+
+.header__communication-btn:hover {
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  background-color: #8c8cff;
+}
+
+.header__cites {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  flex-direction: row-reverse;
+  gap: 8px;
+}
+
+.header__cites span {
+  position: absolute;
+  top: 3px;
+  right: -15px;
+}
+
+.city-dropdown {
+  position: relative;
+}
+
+
+.city__toggle {
+  position: relative;
+  appearance: none;
+  -webkit-appearance: none;
+  background: transparent;
+  font-size: 12px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+
+}
+
+.city-list {
+  position: absolute;
+  top: calc(100% + 12px);
+  left: 0;
+  width: 293px;
+  overflow: auto;
+  background: #fff;
+  border: 1px solid var(--general-color) 80;
+  border-radius: 6px;
+  padding: 6px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, .08);
+  display: none;
+  z-index: 1000;
+  min-width: 180px;
+}
+
+.city-item {
+  padding: 8px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+
+#city-select {
+  position: absolute;
+  left: -9999px;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+
+.open .city-list {
+  display: block;
+}
+
+@media (max-width: 480px) {
+  .header__cites {
+    padding: 6px;
+  }
+}
+
+.phone-number {
+  font-size: 18px;
+  color: #151515;
+  font-weight: 700;
+  transition: var(--transition ) ;
+}
+
+.phone-number:hover {
+  opacity: .7;
+}
+
+.header__socials {
+  display: flex;
+  gap: 24px;
+}
+
+.socials__link {
+  transition: var(--transition ) ;
+}
+
+.socials__link:hover {
+  opacity: .7;
+}
+
+.header__bottom {
+  align-items: center;
+  display: flex;
+  padding-top: 56px;
+  gap: 27.1px;
+}
+
+
+.nav__menu-list {
+  display: flex;
+  gap: 27.1px;
+}
+
+
+.nav__menu-link {
+  text-wrap: nowrap;
+  display: flex;
+  gap: 8px;
+  transition: var(--transition ) ;
+}
+
+.nav__menu-link:hover {
+  color: var(--general-color) ;
+}
+
+.nav__menu-link svg {
+  transform: rotatex(180deg);
+}
+
+.nav__menu-list {
+  display: flex;
+  gap: 27.1px;
+}
+
+@media(width <=1024px) {
+  .header__inner {
+    background: url(../structure/bacgrounds/Subtract-4.png) 100% 100%/ cover no-repeat;
+    margin-left: -15px;
+  }
+
+  .phone-number {
+    display: none;
+  }
+
+  .header__top {
+    gap: 24px;
+    align-items: start;
+    flex-direction: column;
+  }
+
+  .header__logo {
+    display: none;
+  }
+
+  .header__logo--mobile {
+    display: block;
+  }
+
+  .header__communication-btn {
+    display: none;
+  }
+
+  .header__socials {
+    display: none;
+  }
+
+
+  .header__bottom {
+    align-items: end;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .nav__menu-list {
+    flex-direction: column;
+  }
+
+  .body--opened-menu .nav__menu {
+    display: block;
+    opacity: 1;
+    visibility: visible;
+  }
+
+ 
+  .nav__menu {
+    border: 1px solid var(--general-color) 80;
+    border-radius: 6px;
+    visibility: hidden;
+    opacity: 0;
+    position: fixed;
+    top: 17%;
+    right: 10%;
+    left: 5%;
+    background: white;
+    box-shadow: -5px 0 15px rgba(0, 0, 0, 0.1);
+    z-index: 10;
+    padding: 20px;
+    font-size: 14px;
+
+    transition: 0.3s;
+  }
+
+  .nav__menu-list {
+    flex-direction: column;
+    align-items: end;
+    gap: 15px;
+  }
+
+  .body--opened-menu .nav__menu {
+    visibility: visible;
+    opacity: 1;
+  }
+
+}

@@ -1,0 +1,36 @@
+@font-face {
+  font-family: "Cinzel";
+  font-weight: 400;
+  font-style: normal;
+  src:
+    local("Cinzel"),
+    local("Cinzel-Regular"),
+    /* url(../fonts/Cinzel-Regular.woff2) format('woff2'),
+    url(../fonts/Cinzel-Regular.woff) format('woff'), */
+    url(../fonts/Cinzel-Regular.ttf)format('ttf');
+  font-display: swap;
+}
+@font-face {
+  font-family: "Cinzel";
+  font-weight: 500;
+  font-style: normal;
+  src:
+    local("Cinzel"),
+    local("Cinzel-Medium"),
+    /* url(../fonts/Cinzel-Medium.woff2) format('woff2'),
+    url(../fonts/Cinzel-Medium.woff) format('woff'), */
+    url(../fonts/Cinzel-Medium.ttf) format('ttf');
+  font-display: swap;
+}
+@font-face {
+  font-family: "Poppins";
+  font-weight: 500;
+  font-style: normal;
+  src:
+    local("Poppins"),
+    local("Poppins-Medium"),
+    /* url(../fonts/Poppins-Medium.woff2) format('woff2'),
+    url(../fonts/Poppins-Medium.woff) format('woff'), */
+    url(../fonts/Poppins-Medium.ttf) format('ttf');
+  font-display: swap;
+}

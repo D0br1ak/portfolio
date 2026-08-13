@@ -1,0 +1,45 @@
+.office__section {
+  margin-top: 88px;
+}
+
+.office__inner {}
+
+.office__title {
+  font-size: 48px;
+}
+
+.office__content {
+  display: flex;
+  margin-top: 40px;
+  gap: 24px;
+}
+
+.office__info {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  padding: 32px;
+  background: var(--accent-bg ) ;
+  border-radius: var(--border-radius) ;
+}
+
+.office__addres {}
+
+.office__link {
+  color: #1500FF;
+  transition: var(--transition ) ;
+}
+
+.office__link:hover {
+  opacity: .8;
+}
+
+@media(width <=1024px) {
+  .office__title {
+  font-size: 32px;
+}
+  .office__content {
+    flex-direction: column;
+  }
+
+}

@@ -1,0 +1,27 @@
+:root{
+/* fonts */
+--general-font: "Cinzel";
+--accent-font: "Poppins";
+
+/* colors */
+--global-color: #fff;
+--secondary-color: #000;
+--text-color: #0c0c0c;
+--accent-color: #424242;
+--footer-color: #002c30;
+--icon-color : #d0a371;
+
+  /* container */
+  --container-width: 1750px;
+  --container-padding: 0px;
+
+    /* layers */
+  --layer-negative: -1;
+  --layer-1: 1;
+  --layer-2: 2;
+  --layer-3: 3;
+
+  /*transitions */
+  --transition : .3s
+}
+

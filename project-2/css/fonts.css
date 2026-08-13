@@ -1,0 +1,37 @@
+@font-face {
+  font-family: "Mulish";
+  font-weight: 400;
+  font-style: normal;
+  src:
+    local("Mulish"),
+    local("Mulish-Regular"),
+    url(../fonts/Mulish-Regular.woff2)format('woff2'),
+    url(../fonts/Mulish-Regular.woff)format('woff'),
+    url(../fonts/Mulish-Bold.ttf)format('ttf');
+  font-display: swap;
+}
+@font-face {
+  font-family: "Mulish";
+  font-weight: 700;
+  font-style: normal;
+  src:
+    local("Mulish"),
+    local("Mulish-Bold"),
+    url(../fonts/Mulish-Bold.woff2)format('woff2'),
+    url(../fonts/Mulish-Bold.woff)format('woff'),
+    url(../fonts/Mulish-Bold.ttf)format('ttf');
+  font-display: swap;
+}
+@font-face {
+  font-family: "ProstoOne";
+  font-weight: 400;
+  font-style: normal;
+  src:
+    local("ProstoOne"),
+    local("ProstoOne-Regular"),
+    url(../fonts/ProstoOne-Regular.woff2) format('woff2'),
+    url(../fonts/ProstoOne-Regular.woff) format('woff'),
+    url(../fonts/ProstoOne-Regular.ttf) format('truetype');
+  font-display: swap;
+}
+

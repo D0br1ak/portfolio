@@ -1,0 +1,110 @@
+.contact__section {
+    background: var(--footer-color);
+  padding: 40px;
+}
+
+.contact__inner {
+    font-family: var(--general-font);
+  display: flex;
+  justify-content: center;
+  gap: 1vh 45px;
+}
+
+.contact_form {
+    background: var(--footer-color);
+  width: 500px;
+  max-height: 400px;
+  padding: 10px;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.contact_title {
+  font-size: 36px;
+  color: var(--global-color);
+  text-align: center;
+
+}
+
+.contact_input {
+  font-size: 20px;
+  color: var(--global-color);
+  padding: 10px;
+  border-radius: 3px;
+  border: 1px solid var(--global-color);
+  background: transparent;
+  min-width: 300px;
+}
+.contact_input::placeholder {
+    font-size: 20px;
+  color: var(--global-color);
+opacity: 0.7;
+
+}
+
+.contact_area {
+  padding: 10px;
+  border-radius: 3px;
+  border: 1px solid var(--global-color);
+  background: transparent;
+  min-width: 300px;
+  min-height: 100px;
+}
+
+.contact_button {
+    font-size: 20px;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: var(--global-color);
+  padding: 10px;
+  border-radius: 3px;
+  border: 1px solid var(--global-color);
+  background: transparent;
+  min-width: 300px;
+  transition: var(--transition);
+}
+
+.contact_button:hover {
+  padding: 15px;
+  color: var(--global-color);
+  background: transparent;
+  min-width: 300px;
+}
+
+@media(width <=1024px) {
+  .contact__inner {
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  
+}
+.contact_form {
+    background: var(--footer-color);
+  width: 400px;
+
+}
+}
+@media(width <=450px) {
+  .contact__inner {
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  gap: 4vh;
+}
+.contact_form {
+  width: 250px;
+}
+.contact_input {
+  min-width: 250px;
+}
+.contact_area {
+  min-width: 250px;
+}
+
+.contact_button {
+  min-width: 250px;
+}
+
+}

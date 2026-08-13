@@ -1,0 +1,66 @@
+.promotion__section {
+  margin-top: 200px;
+}
+
+.promotion__title {
+  font-size: 48px;
+}
+
+.promotion__list {
+  justify-content: center;
+  align-items: center;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  margin-top: 40px;
+}
+
+.promotion__item {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding: 73px 32px;
+  background: url(../structure/bacgrounds/phone-6.png) 50% 10% / cover no-repeat;
+
+}
+
+.promotion__add {
+  padding: 27px 34px;
+  background: #ffffff;
+  border-radius: var(--border-radius) ;
+  transform: rotateZ(350deg);
+  margin-top: 27px;
+}
+
+.promotion__icon {
+  z-index: 3;
+  position: absolute;
+  right: 30px;
+  bottom: 10px;
+}
+
+@media (max-width: 1250px) {
+
+.promotion__list {
+  grid-template-columns: repeat(2, 1fr);
+}
+}
+@media (max-width: 1024px) {
+
+.promotion__title {
+  font-size: 32px;
+}
+
+}
+@media (max-width: 768px) {
+
+.promotion__title {
+  font-size: 32px;
+}
+.promotion__list {
+  grid-template-columns: repeat(1, 1fr);
+}
+.promotion__icon {
+  right: 10px;
+}
+}

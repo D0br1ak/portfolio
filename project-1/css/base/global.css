@@ -1,0 +1,71 @@
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 100px;
+}
+
+body {
+  background: var(--general-bg);
+}
+
+.wrapper {
+  overflow: hidden;
+  min-height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.container {
+  overflow: hidden;
+  width: 100%;
+  max-width: var(--container-width);
+  padding: var(--container-padding);
+  margin: 0 auto;
+  height: 100%;
+}
+
+.title {
+  font-family: var(--accent-font);
+  font-weight: 500;
+  font-size: 16px;
+}
+
+.bi {
+  color: var(--icon-color);
+  font-size: 18px;
+}
+
+.bi-instagram, .bi-facebook {
+  transition: var(--transition);
+}
+
+.bi-instagram:hover,  .bi-facebook:hover {
+  opacity: .7;
+}
+
+.page__image {
+  background: var(--secondary-color);
+  position: relative;
+  margin-top: -20px;
+      width: 99.2vw;
+    height: 40vh;
+}
+.page__image img {
+  opacity: .7;
+      width: 100%;
+      object-fit: cover;
+      height: 40vh;
+}
+.page__title {
+  text-transform: uppercase;
+  font-family: var(--general-font);
+  font-size: 4vw;
+  color: var(--global-color);
+  position: absolute;
+      top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+@media(width <= 768){
+}
+  

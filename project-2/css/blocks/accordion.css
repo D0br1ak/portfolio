@@ -1,0 +1,99 @@
+.accordion__section {
+  margin-top: 120px;
+}
+
+.accordion__title {
+  font-size: 48px;
+}
+
+.accordion-list {
+  position: relative;
+  margin-top: 58px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.accordion-list__control {
+  background: var(--accent-bg ) ;
+  padding: 34px 32px;
+  border-radius: var(--border-radius) ;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  text-decoration: none;
+  transition: var(--transition ) ;
+}
+
+.accordion-list__control:hover {
+  background: var(--general-color) ;
+}
+
+.accordion-list__control-title {
+  font-family: "ProstoOne";
+}
+
+.accordion-list__control-icon {
+  transition: var(--transition )  ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.accordion-list__item--opened .accordion-list__control-icon {
+  transform: rotate(135deg);
+}
+
+
+.accordion-list__content {
+  padding: 32px;
+  border-radius: var(--border-radius) ;
+  max-height: 0;
+  overflow: hidden;
+  transition:  var(--transition )  ease;
+  background: transparent;
+  opacity: 0;
+}
+
+.accordion-list__item--opened .accordion-list__content {
+  background: var(--accent-bg ) ;
+  max-height: 1000px;
+  margin-top: 10px;
+  opacity: 1;
+  transition: var(--transition ) ;
+}
+
+.accordion-list__item--opened .accordion-list__content:hover {
+  background: var(--general-color) ;
+}
+
+.accordion__img {
+  pointer-events: none;
+  position: absolute;
+  top: -217px;
+  right: 50px;
+}
+
+@media(width <=1024px) {
+  .accordion__title {
+    font-size: 32px;
+  }
+}
+@media(width <=768px) {
+.accordion-list {
+  margin-top: 208px;
+}
+.accordion-list__control-title {
+ max-width: 195px;
+}
+}
+@media(width <=576px) {
+.accordion__img {
+  display: none;
+}
+.accordion-list {
+  margin-top: 48px;
+}
+}
